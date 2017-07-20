@@ -1,12 +1,14 @@
-body{background:green}
+body{
+    background:lightblue;
+}
 h1{
-    color: white
+    color: white;
 }
 h2{
-    color: red
+    color: red;
 }
 p{
-    font-size: 40
+    font-size: 40;
 }
 h1{
     color: black;
@@ -16,7 +18,7 @@ body{
     font-family:cursive;
 }
 h1:hover{
-    color: yellow
+    color: yellow;
 
 }
 h3{
@@ -64,11 +66,18 @@ h3{
 .nav_bar li{
     display: inline;
     margin: 20px 20px;
-    }
+    font-size: 20px;
+
+
+
+
+
+
+
+}
 
 .nav_bar li:hover{
     background-color: grey;
-
 
 }
 .nav_bar li a{

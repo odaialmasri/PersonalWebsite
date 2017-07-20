@@ -1,11 +1,50 @@
+<!DOCTYPE html>
 {% extends"layout.html"%}
 
+
+
+{% block head%}
+<link rel="stylesheet" type="text/css" href="../static/stylesheets/contact.css">
+{%endblock%}
+
+
+
+
+
+
+
+
 {% block body %}
-<link rel="stylesheet" type="text/css" href="../static/stylesheets/style.css?version=3">
+
+
+
 <h2>To Contact Me</h2>
 <a href="https://www.facebook.com/odai.almasri2001"target="_blank">facbook</a>
 <br>
 <a href="https://www.instagram.com/odai.almasri/"target="_blank">inastgram</a>
+    <h1>like register to facbook</h1>
+    <div class="Massege">    
+    <form action="{{url_for('form_res')}}" method="post">
+    	<label>Facbook:</label><br>
+    	<input type="text"value=""placeholder="Email">
+    	<input type="password"value=""placeholder="password"><br>
+    	<br>
+    	<label>First Name</label>
+    	<input type="text" name="firstname"><br>
+
+    	<label>last Name</label>
+    	<input type="text" name="lastname" ><br>
+    	
+    	<br>
+    	Gender:
+    	<input type="radio" name="gender" value="Male">Male<br>
+    	<input type="radio" name="gender" value="Female">Female<br>
+    	<input type="radio" name="gender" value="Other">Other<br>
+    	<textarea class="odai" type="text" name ="message"></textarea><br>
+
+    	<input type="submit">
+    </form>
+</div>
 
 
 {% endblock %}
